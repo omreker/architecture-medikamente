@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="bnGb4XDQCV0avcPk1lNr">
+    <mxGraphModel dx="2009" dy="1125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="patient" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Пациент&#xa;[Person]&#xa;&#xa;ЛК / Мобильное&#xa;приложение" vertex="1">
+          <mxGeometry height="160" width="140" x="300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="reception" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Ресепшен&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="300" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Специалист&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="300" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="cashier" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Кассир&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="410" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="accountant" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Бухгалтер&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="610" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="warehouse" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Склад&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="810" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="it" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="IT / Security&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="140" x="1010" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;strokeColor=#0D5091;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=14;" value="Платформа «Медикаменте»&#xa;[Software System]&#xa;&#xa;Единая система записи, EMR,&#xa;платежей + Privacy Layer" vertex="1">
+          <mxGeometry height="160" width="280" x="640" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Лаборатория&#xa;[Software System]&#xa;&#xa;Внешний API" vertex="1">
+          <mxGeometry height="100" width="180" x="1220" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pay" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Платёжные&#xa;провайдеры&#xa;[Software System]" vertex="1">
+          <mxGeometry height="100" width="180" x="1220" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Каналы уведомлений&#xa;[Software System]&#xa;&#xa;Push / SMS / Робот" vertex="1">
+          <mxGeometry height="100" width="180" x="1220" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="gov" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Госорганы&#xa;[Software System]" vertex="1">
+          <mxGeometry height="80" width="180" x="1220" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="onec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="1С (Legacy)&#xa;[Software System]&#xa;&#xa;Бухгалтерия / Склад" vertex="1">
+          <mxGeometry height="100" width="180" x="1220" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;exitX=1.007;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" target="system" value="HTTPS&#xa;только свои данные">
+          <mxGeometry relative="1" x="-0.1209" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="reception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;exitX=1;exitY=0.664;exitDx=0;exitDy=0;exitPerimeter=0;" target="system" value="HTTPS + RBAC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="doctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="system" value="HTTPS + ABAC&#xa;need-to-know">
+          <mxGeometry relative="1" x="-0.625" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="cashier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="system" value="HTTPS">
+          <mxGeometry relative="1" x="-0.8689" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="480" y="770" />
+              <mxPoint x="780" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="accountant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="system" value="HTTPS">
+          <mxGeometry relative="1" x="-0.8049" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="680" y="770" />
+              <mxPoint x="780" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="warehouse" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="system" value="HTTPS">
+          <mxGeometry relative="1" x="-0.8049" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="880" y="770" />
+              <mxPoint x="780" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="it" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="system" value="Admin +&#xa;Security Console">
+          <mxGeometry relative="1" x="-0.8689" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1080" y="770" />
+              <mxPoint x="780" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="lab" value="mTLS +&#xa;Data Contract">
+          <mxGeometry relative="1" x="0.7931" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1100" y="460" />
+              <mxPoint x="1100" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="pay" value="Tokenised&#xa;payments">
+          <mxGeometry relative="1" x="0.7273" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1100" y="460" />
+              <mxPoint x="1100" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="notify" value="Персональные&#xa;уведомления">
+          <mxGeometry relative="1" x="0.6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="gov" value="Отчётность">
+          <mxGeometry relative="1" x="0.7209" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1100" y="460" />
+              <mxPoint x="1100" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="onec" value="API&#xa;минимальных данных">
+          <mxGeometry relative="1" x="0.7857" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1100" y="460" />
+              <mxPoint x="1100" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
