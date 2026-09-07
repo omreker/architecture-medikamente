@@ -1,0 +1,218 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="8FddjdlKv2wxhpLcx795">
+    <mxGraphModel dx="2009" dy="1125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="patient" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Пациент&#xa;[Person]" vertex="1">
+          <mxGeometry height="140" width="120" x="60" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="shape=mxgraph.c4.person;html=1;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;align=center;" value="Сотрудники&#xa;[Person]&#xa;&#xa;Ресепшен, Врачи,&#xa;Кассиры, Бухгалтерия" vertex="1">
+          <mxGeometry height="160" width="120" x="60" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;dashPattern=8 4;verticalAlign=top;fontStyle=1;fontSize=14;align=right;spacingLeft=10;spacingTop=-25;labelPosition=left;verticalLabelPosition=bottom;spacing=0;spacingRight=-200;" value="Платформа «Медикаменте»" vertex="1">
+          <mxGeometry height="980" width="1100" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Patient Portal&#xa;/ Mobile BFF&#xa;[Container: React/Flutter]&#xa;&#xa;Личный кабинет,&#xa;запись, просмотр&#xa;своих данных" vertex="1">
+          <mxGeometry height="130" width="160" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="staffui" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Staff Portal&#xa;[Container: React]&#xa;&#xa;Рабочие места&#xa;ресепшена, врачей,&#xa;кассиров" vertex="1">
+          <mxGeometry height="130" width="160" x="280" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="apigw" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="API Gateway&#xa;[Container]&#xa;&#xa;Authn, TLS,&#xa;rate-limit, routing" vertex="1">
+          <mxGeometry height="110" width="150" x="530" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="privacy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E074C1;strokeColor=#B2509E;fontColor=#ffffff;align=center;fontStyle=1;" value="Privacy Layer&#xa;[Container]&#xa;&#xa;Consent · Tagging&#xa;Policy (OPA/Cerbos)&#xa;Encryption orchestration&#xa;Audit" vertex="1">
+          <mxGeometry height="140" width="180" x="790" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="patientsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Patient Service&#xa;[Container: Java/Kotlin]&#xa;&#xa;Профиль, записи,&#xa;согласия" vertex="1">
+          <mxGeometry height="110" width="160" x="280" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="emr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="EMR Service&#xa;[Container: Java]&#xa;&#xa;Мед.карты, диагнозы,&#xa;назначения" vertex="1">
+          <mxGeometry height="110" width="160" x="480" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Payment Service&#xa;[Container: Java]&#xa;&#xa;Платежи,&#xa;tokenisation" vertex="1">
+          <mxGeometry height="110" width="160" x="680" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="order" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Lab Order Service&#xa;[Container: Java]&#xa;&#xa;Направления и&#xa;результаты анализов" vertex="1">
+          <mxGeometry height="110" width="160" x="915" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Notification Service&#xa;[Container: Go]&#xa;&#xa;Push / SMS / Робот" vertex="1">
+          <mxGeometry height="110" width="160" x="1110" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="pg1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Patient DB&#xa;[Container: PostgreSQL]&#xa;&#xa;Field-level encryption&#xa;+ tags" vertex="1">
+          <mxGeometry height="110" width="150" x="285" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="pg2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="EMR DB&#xa;[Container: PostgreSQL]&#xa;&#xa;Field-level encryption&#xa;+ tags" vertex="1">
+          <mxGeometry height="110" width="150" x="485" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Audit Store&#xa;[Container: ClickHouse]&#xa;&#xa;Immutable audit&#xa;+ lineage" vertex="1">
+          <mxGeometry height="110" width="150" x="685" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="lake" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Data Lake&#xa;[Container: S3 + Parquet]&#xa;&#xa;Только обезличенные&#xa;данные" vertex="1">
+          <mxGeometry height="110" width="150" x="920" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;align=center;" value="Analytics Platform&#xa;[Container]&#xa;&#xa;BI / ML / LLM&#xa;на обезличенных данных" vertex="1">
+          <mxGeometry height="100" width="180" x="905" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Lab API&#xa;[External]&#xa;&#xa;Лаборатория" vertex="1">
+          <mxGeometry height="90" width="140" x="1420" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="payprov" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="Payment&#xa;Providers&#xa;[External]" vertex="1">
+          <mxGeometry height="80" width="140" x="1420" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="onec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" value="1С&#xa;[External]&#xa;&#xa;Legacy" vertex="1">
+          <mxGeometry height="80" width="140" x="1420" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;fontSize=10;" target="web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1l" connectable="0" parent="e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="HTTPS" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;fontSize=10;" target="staffui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2l" connectable="0" parent="e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="HTTPS" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="apigw">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="185" />
+              <mxPoint x="490" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="staffui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="apigw">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="385" />
+              <mxPoint x="490" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="apigw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#B2509E;strokeWidth=2;" target="privacy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5l" connectable="0" parent="e5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#B2509E;" value="Policy check&#xa;+ tagging" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="privacy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#B2509E;" target="patientsvc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="460" />
+              <mxPoint x="360" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="privacy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#B2509E;" target="emr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="340" />
+              <mxPoint x="560" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="privacy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#B2509E;" target="payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="460" />
+              <mxPoint x="760" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="privacy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#B2509E;" target="order">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="460" />
+              <mxPoint x="995" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="patientsvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="pg1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="emr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="pg2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="privacy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="audit">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="670" />
+              <mxPoint x="760" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;startArrow=blockThin;startFill=1;strokeColor=#666666;" target="lab">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="520" />
+              <mxPoint x="1490" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13l" connectable="0" parent="e13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="mTLS +&#xa;Data Contract" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="218" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="payprov">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="500" />
+              <mxPoint x="1090" y="500" />
+              <mxPoint x="1090" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14l" connectable="0" parent="e14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Tokenised" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint x="100" y="143" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="patientsvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="onec">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="500" />
+              <mxPoint x="1380" y="500" />
+              <mxPoint x="1380" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15l" connectable="0" parent="e15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="API&#xa;minimal data" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint x="442" y="80" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="emr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;dashed=1;" target="lake">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="690" />
+              <mxPoint x="995" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16l" connectable="0" parent="e16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="CDC ->&#xa;Anonymization" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint x="-77" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="analytics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#666666;" target="lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17l" connectable="0" parent="e17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Read only&#xa;anonymized" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
